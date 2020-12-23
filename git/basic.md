@@ -43,9 +43,28 @@ $ git init
 
 ### add하기
 
+```
+$ git add . 
+```
+
+
+
 ### commit 하기
 
+```
+$ git commit -m '<message>'
+```
+
+
+
 ### Log보기
+
+```
+$ git log
+(나갈때 q)
+```
+
+
 
 ### 원격저장소 등록하기
 
@@ -54,20 +73,30 @@ $ git remote add origin <URL> # 원격 저장소 등록하기
 
 $ git remote -v # 원격 저장소 확인하기
 origin <URL>... # origin remote 저장소의 이음
+
+$ git remote rm <remote_repo_name>
+
+$ git remote -V # 없어진것 확인
 ```
 
 
+
+### 원격 저장소에 push 하기
+
+```
+$ git push origin master # remote 이용이 origin일 경우
+```
 
 
 
 ## Summary
 
-| 명령어                 | 설명                           |
-| ---------------------- | ------------------------------ |
-| `$ git init`           | 반 디렉토리(폴더)를 git 저장소 |
-| `$ git add <filename>` |                                |
-|                        |                                |
-|                        |                                |
+| 명령어                              | 설명                                                |
+| ----------------------------------- | --------------------------------------------------- |
+| `$ git init`                        | 반 디렉토리(폴더)를 git 저장소(repo)로 초기화 한다. |
+| `$ git add <filename>`              | < filename>을 stage에 올린다.                       |
+| `$ git commit -m < commit massage>` |                                                     |
+|                                     |                                                     |
 
 
 
